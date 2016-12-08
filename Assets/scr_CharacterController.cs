@@ -558,11 +558,12 @@ public class scr_CharacterController : MonoBehaviour
                 if (c.transform.parent.parent == transform)
                     continue;
 
+                DamageInfo damageInfo = new DamageInfo();
+                damageInfo.direction = new Vector3(10f, 10f, 0f);
+                damageInfo.damage = 10f;
+                damageInfo.DebugLog = "It Works";
 
-                float damage = 10f;
-                Vector3 direction = new Vector3(10,0,0);
-
-                c.SendMessageUpwards("TakeDamage", damage);
+                c.SendMessageUpwards("TakeDamage", damageInfo);
                 Debug.Log(c.name);
             }
         }

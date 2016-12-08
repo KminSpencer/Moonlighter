@@ -134,6 +134,7 @@
     <None Include="Assets\OtherAssets\Ferr\Docs\Ferr2DTerrainTool - Readme.txt" />
     <None Include="Assets\OtherAssets\onlighter\Assets\Ferr\Common\Data\cache.txt" />
     <None Include="Assets\Standard Assets\CrossPlatformInput\CrossPlatformInputGuidelines.txt" />
+    <None Include="Assets\ssets\OtherAssets\Ferr\Common\Data\cache.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\SyntaxTree\UnityVS\2015\UnityVS.CSharp.targets" />
 </Project>

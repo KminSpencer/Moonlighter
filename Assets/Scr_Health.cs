@@ -2,6 +2,13 @@
 using UnityEngine.UI;
 using System.Collections;
 
+public struct DamageInfo
+{
+    public float damage;
+    public Vector2 direction;
+    public string DebugLog;
+}
+
 public class Scr_Health : MonoBehaviour {
 
     public float m_MaxHealth;
@@ -20,8 +27,14 @@ public class Scr_Health : MonoBehaviour {
     {
         float ratio = m_CurrentHealth / m_MaxHealth;
     }
-    private void TakeDamage(float damage, Vector2 direction)
+    private void TakeDamage(DamageInfo damageInfo)
     {
+        float damage = damageInfo.damage;
+        Vector2 direction = damageInfo.direction;
+        string log = damageInfo.DebugLog;
+
+        Debug.Log(log);
+
         m_CurrentHealth -= damage;
 
         if(m_CurrentHealth < 0)
