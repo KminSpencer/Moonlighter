@@ -82,7 +82,6 @@
 -define:UNITY_EDITOR
 -define:UNITY_EDITOR_64
 -define:UNITY_EDITOR_WIN
--define:UNITY_TEAM_LICENSE
 -define:CROSS_PLATFORM_INPUT
 Assets/OtherAssets/Editor/CrossPlatformInput/CrossPlatformInputInitialize.cs
 Assets/OtherAssets/Ferr/2D/Editor/Ferr2D_PathEditor.cs
